@@ -2,7 +2,9 @@
 
 QuickTasks is a lightning-fast macOS menu bar application designed to let you create Jira Data Center tasks instantly from anywhere on your Mac. Instead of breaking your flow to open a browser, navigate to Jira, and fill out a slow form, you can simply press a global hotkey, type your task, and get back to work.
 
-![QuickTasks Menu Bar App](.agents/artifacts/quicktasks_app_icon_1778953989360.png) <!-- Update with actual screenshot if desired -->
+<p align="center">
+  <img src="QuickTasks/Assets.xcassets/AppIcon.appiconset/AppIcon.png" width="128" alt="QuickTasks App Icon">
+</p>
 
 ## Features 🚀
 
@@ -71,6 +73,8 @@ Set up your default behavior for quick task entry:
 ---
 
 ## Usage 📝
+
+![Quick Entry Panel](screenshots/usage.png)
 
 1. Press `⌥⌘J` anywhere on your Mac to summon the Quick Entry panel.
 2. Type your task summary. 
