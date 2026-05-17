@@ -59,8 +59,8 @@ private struct ConnectionTab: View {
                     prompt: Text(verbatim: "https://jira.company.com")
                 )
                 .textContentType(.URL)
-                .onChange(of: viewModel.baseURL) {
-                    viewModel.saveCredentials()
+                .onChange(of: viewModel.baseURL) { oldValue, newValue in
+                    if oldValue != newValue { viewModel.saveCredentials() }
                 }
 
                 SecureField(
@@ -71,8 +71,8 @@ private struct ConnectionTab: View {
                         defaultValue: "Paste your Jira PAT"
                     ))
                 )
-                .onChange(of: viewModel.patInput) {
-                    viewModel.saveCredentials()
+                .onChange(of: viewModel.patInput) { oldValue, newValue in
+                    if oldValue != newValue { viewModel.saveCredentials() }
                 }
             } header: {
                 Text("settings_section_credentials", comment: "Credentials section header")
@@ -107,14 +107,6 @@ private struct ConnectionTab: View {
                     }
                 }
 
-                if !viewModel.resolvedUsername.isEmpty {
-                    LabeledContent(
-                        String(localized: "settings_logged_in_as", defaultValue: "Logged in as")
-                    ) {
-                        Text("\(viewModel.resolvedDisplayName) (\(viewModel.resolvedUsername))")
-                            .foregroundStyle(.secondary)
-                    }
-                }
             } header: {
                 Text("settings_section_connection_test", comment: "Connection test section header")
             }

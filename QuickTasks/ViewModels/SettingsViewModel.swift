@@ -87,6 +87,8 @@ final class SettingsViewModel {
         if !patInput.isEmpty && patInput != "••••••••••••••••" {
             try? keychainService.savePAT(patInput)
         }
+        
+        UserDefaults.standard.synchronize()
     }
 
     /// Tests the Jira connection using the current credentials.

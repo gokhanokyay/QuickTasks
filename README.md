@@ -27,7 +27,7 @@ QuickTasks is a lightning-fast macOS menu bar application designed to let you cr
 ### Building from Source
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/QuickTasks.git
+   git clone https://github.com/gokhanokyay/QuickTasks.git
    cd QuickTasks
    ```
 2. Generate the Xcode project using XcodeGen:
@@ -50,15 +50,23 @@ QuickTasks is a lightning-fast macOS menu bar application designed to let you cr
 When you first launch QuickTasks, you'll see a lightning bolt (`⚡️`) in your macOS menu bar. Click it and select **Settings** (or use the `⌥⌘K` shortcut while the menu is open).
 
 ### 1. Jira Credentials
+![Connection Settings](screenshots/settings_connection.png)
+
 - **Jira Base URL:** Enter your company's Jira Data Center URL (e.g., `https://jira.yourcompany.com`).
 - **Personal Access Token:** Go to your Jira Profile → Personal Access Tokens and generate a new token. Paste it here.
 - Your credentials are automatically saved as you type.
 
 ### 2. Defaults
+![Defaults Settings](screenshots/settings_defaults.png)
+
 Set up your default behavior for quick task entry:
-- **Project Keys:** Add the short project keys you frequently use (e.g., `EA`, `INFRA`). Note: This must be the short prefix used in Jira issue numbers (like `EA-123`), not the full project name. Click one to set it as your default.
+- **Project Keys:** Add the short project keys you frequently use (e.g., `PROJ`, `INFRA`). Note: This must be the short prefix used in Jira issue numbers (like `PROJ-123`), not the full project name. Click one to set it as your default.
 - **Default Issue Type:** Choose between Task, Story, Bug, or Sub-task.
 - **Assignee:** Choose whether tasks default to you, or set a custom default username.
+
+### 3. Shortcut
+![Shortcut Settings](screenshots/settings_shortcut.png)
+
 
 ---
 
