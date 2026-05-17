@@ -1,0 +1,68 @@
+name: QuickTasks
+options:
+  bundleIdPrefix: com.malidyatech
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "16.0"
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    CODE_SIGN_IDENTITY: "-"
+    CODE_SIGN_STYLE: Manual
+    PRODUCT_BUNDLE_IDENTIFIER: com.malidyatech.QuickTasks
+
+packages:
+  KeyboardShortcuts:
+    url: https://github.com/sindresorhus/KeyboardShortcuts
+    from: "2.1.0"
+
+targets:
+  QuickTasks:
+    type: application
+    platform: macOS
+    sources:
+      - path: QuickTasks
+    resources:
+      - path: QuickTasks/Assets.xcassets
+      - path: QuickTasks/Resources
+    settings:
+      base:
+        INFOPLIST_FILE: QuickTasks/Info.plist
+        CODE_SIGN_ENTITLEMENTS: QuickTasks/QuickTasks.entitlements
+        PRODUCT_NAME: QuickTasks
+    dependencies:
+      - package: KeyboardShortcuts
+    entitlements:
+      path: QuickTasks/QuickTasks.entitlements
+    info:
+      path: QuickTasks/Info.plist
+      properties:
+        CFBundleName: QuickTasks
+        CFBundleDisplayName: QuickTasks
+        CFBundleIdentifier: com.malidyatech.QuickTasks
+        CFBundleVersion: "1"
+        CFBundleShortVersionString: "1.0"
+        CFBundlePackageType: APPL
+        CFBundleExecutable: QuickTasks
+        LSMinimumSystemVersion: "14.0"
+        LSUIElement: true
+        NSHumanReadableCopyright: "Copyright © 2026 Malidya Tech. All rights reserved."
+
+  QuickTasksTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: QuickTasksTests
+    dependencies:
+      - target: QuickTasks
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.malidyatech.QuickTasksTests
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/QuickTasks.app/Contents/MacOS/QuickTasks"
+        BUNDLE_LOADER: "$(TEST_HOST)"
