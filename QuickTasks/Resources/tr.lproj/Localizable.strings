@@ -1,0 +1,77 @@
+/* Turkish Localizable Strings — QuickTasks */
+
+/* Menu bar label */
+"QuickTasks" = "QuickTasks";
+
+/* Open Quick Entry menu item */
+"quick_entry_open" = "Hızlı Giriş Aç";
+
+/* Open Settings menu item */
+"settings_open" = "Ayarlar…";
+
+/* Quit application menu item */
+"app_quit" = "QuickTasks'dan Çık";
+
+/* Quick entry text field placeholder */
+"quick_entry_placeholder" = "Görev yaz… ( /proje  /hata  @atanan )";
+
+/* Setup hint shown in menu bar when Jira is not configured */
+"menu_setup_hint" = "Başlamak için Ayarlar'dan Jira'yı yapılandırın";
+
+/* --- Settings --- */
+
+/* Connection tab */
+"settings_tab_connection" = "Bağlantı";
+"settings_tab_defaults" = "Varsayılanlar";
+"settings_tab_shortcut" = "Kısayol";
+
+/* Credentials */
+"settings_section_credentials" = "Jira Kimlik Bilgileri";
+"settings_jira_url_label" = "Jira Base URL";
+"settings_pat_label" = "Kişisel Erişim Anahtarı (PAT)";
+"settings_pat_prompt" = "Jira PAT'ınızı yapıştırın";
+
+/* Connection test */
+"settings_section_connection_test" = "Bağlantı Testi";
+"settings_test_connection" = "Bağlantıyı Test Et";
+"settings_testing_connection" = "Test ediliyor…";
+"settings_connection_success" = "%@ (%@) olarak bağlandı";
+"settings_logged_in_as" = "Giriş yapan";
+
+/* Projects */
+"settings_section_projects" = "Proje Anahtarları";
+"settings_project_key_placeholder" = "örn. EA, INFRA";
+"settings_project_key_hint" = "Jira'daki kısa proje ANAHTARINI girin (görev numarasının öneki, örn. EA-123 → EA). Tam proje adı değil.";
+"settings_default_badge" = "Varsayılan";
+
+/* Issue type */
+"settings_section_issue_type" = "Görev Tipi";
+"settings_issue_type_label" = "Varsayılan Görev Tipi";
+
+/* Assignee */
+"settings_section_assignee" = "Atanan";
+"settings_assignee_label" = "Varsayılan Atanan";
+"settings_assignee_me" = "Ben";
+"settings_assignee_other" = "Diğer";
+"settings_custom_assignee_placeholder" = "kullanıcıadı";
+
+/* Shortcut */
+"settings_section_global_shortcut" = "Genel Kısayol";
+"settings_shortcut_label" = "Hızlı Giriş Kısayolu";
+"settings_shortcut_footer" = "Bu kısayola herhangi bir yerden basarak Hızlı Giriş panelini açabilirsiniz.";
+
+/* --- Notifications --- */
+"notification_task_created" = "Görev Oluşturuldu: %@";
+"notification_task_failed_title" = "Görev Başarısız";
+"notification_task_failed_body" = "\"%@\" — %@";
+
+/* --- Jira Errors --- */
+"jira_error_invalid_url" = "Geçersiz Jira URL'i. Lütfen ayarlarınızı kontrol edin.";
+"jira_error_missing_credentials" = "PAT bulunamadı. Lütfen Jira kimlik bilgilerinizi yapılandırın.";
+"jira_error_network" = "Ağ erişilemez: %@";
+"jira_error_invalid_response" = "Jira'dan geçersiz bir yanıt alındı.";
+"jira_error_unauthorized" = "Kimlik doğrulama başarısız. Lütfen PAT'ınızı kontrol edin.";
+"jira_error_forbidden" = "Erişim reddedildi. Bu işlem için yetkiniz yok.";
+"jira_error_not_found" = "İstenen Jira kaynağı bulunamadı.";
+"jira_error_decoding" = "Jira yanıtı ayrıştırılamadı.";
+"jira_error_server" = "Jira sunucu hatası (%d): %@";

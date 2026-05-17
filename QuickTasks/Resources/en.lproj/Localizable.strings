@@ -1,0 +1,77 @@
+/* English Localizable Strings — QuickTasks */
+
+/* Menu bar label */
+"QuickTasks" = "QuickTasks";
+
+/* Open Quick Entry menu item */
+"quick_entry_open" = "Open Quick Entry";
+
+/* Open Settings menu item */
+"settings_open" = "Settings…";
+
+/* Quit application menu item */
+"app_quit" = "Quit QuickTasks";
+
+/* Quick entry text field placeholder */
+"quick_entry_placeholder" = "Type a task… ( /project  /bug  @assignee )";
+
+/* Setup hint shown in menu bar when Jira is not configured */
+"menu_setup_hint" = "Configure Jira in Settings to get started";
+
+/* --- Settings --- */
+
+/* Connection tab */
+"settings_tab_connection" = "Connection";
+"settings_tab_defaults" = "Defaults";
+"settings_tab_shortcut" = "Shortcut";
+
+/* Credentials */
+"settings_section_credentials" = "Jira Credentials";
+"settings_jira_url_label" = "Jira Base URL";
+"settings_pat_label" = "Personal Access Token";
+"settings_pat_prompt" = "Paste your Jira PAT";
+
+/* Connection test */
+"settings_section_connection_test" = "Connection Test";
+"settings_test_connection" = "Test Connection";
+"settings_testing_connection" = "Testing…";
+"settings_connection_success" = "Connected as %@ (%@)";
+"settings_logged_in_as" = "Logged in as";
+
+/* Projects */
+"settings_section_projects" = "Project Keys";
+"settings_project_key_placeholder" = "e.g. EA, INFRA";
+"settings_project_key_hint" = "Enter the short project KEY from Jira (the prefix on issue numbers, e.g. EA-123 → EA). Not the full project name.";
+"settings_default_badge" = "Default";
+
+/* Issue type */
+"settings_section_issue_type" = "Issue Type";
+"settings_issue_type_label" = "Default Issue Type";
+
+/* Assignee */
+"settings_section_assignee" = "Assignee";
+"settings_assignee_label" = "Default Assignee";
+"settings_assignee_me" = "Me";
+"settings_assignee_other" = "Other";
+"settings_custom_assignee_placeholder" = "username";
+
+/* Shortcut */
+"settings_section_global_shortcut" = "Global Shortcut";
+"settings_shortcut_label" = "Quick Entry Shortcut";
+"settings_shortcut_footer" = "Press the shortcut anywhere to summon the Quick Entry panel.";
+
+/* --- Notifications --- */
+"notification_task_created" = "Task Created: %@";
+"notification_task_failed_title" = "Task Failed";
+"notification_task_failed_body" = "\"%@\" — %@";
+
+/* --- Jira Errors --- */
+"jira_error_invalid_url" = "Invalid Jira URL. Please check your settings.";
+"jira_error_missing_credentials" = "No PAT found. Please configure your Jira credentials.";
+"jira_error_network" = "Network unavailable: %@";
+"jira_error_invalid_response" = "Received an invalid response from Jira.";
+"jira_error_unauthorized" = "Authentication failed. Please check your PAT.";
+"jira_error_forbidden" = "Access denied. You don't have permission for this operation.";
+"jira_error_not_found" = "The requested Jira resource was not found.";
+"jira_error_decoding" = "Failed to parse the Jira response.";
+"jira_error_server" = "Jira server error (%d): %@";
