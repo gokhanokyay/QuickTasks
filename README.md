@@ -96,4 +96,6 @@ Set up your default behavior for quick task entry:
 - **Dependencies:** `KeyboardShortcuts` (for global hotkey registration)
 
 ## License
-Copyright © 2026 Malidya Tech. All rights reserved.
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Copyright © 2026 Malidya Tech.
